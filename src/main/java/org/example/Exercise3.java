@@ -6,7 +6,7 @@ public class Exercise3 {
     public static void main(String[] args) {
         int[] input = new int[]{7, 11};
         Boolean notBothPrime = false;
-        if (!isPrime(7) || !isPrime(12)){
+        if (!isPrime(input[0]) || !isPrime(input[1])){
             notBothPrime = true;
         }
         System.out.println(notBothPrime);
