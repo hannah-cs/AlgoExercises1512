@@ -29,10 +29,14 @@ public class Exercise2 {
         A = inputA;
         B = inputB;
     }
-    while (A % B != 0){
-        remainder = A%B;
-        A = B;
-        B = remainder;
+    if (A % B == 0){
+        remainder = B;
+    } else {
+        while (A % B != 0) {
+            remainder = A % B;
+            A = B;
+            B = remainder;
+        }
     }
     double GCD = remainder;
         System.out.println(GCD);
